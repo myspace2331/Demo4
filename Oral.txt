@@ -1,0 +1,112 @@
+EXP1:  Write a program to create a student portfolio webpage using HTML 5 elements.
+<!DOCTYPE html> → Tells the browser this is an HTML5 page.
+<html lang="en"> → Starts the HTML page and says the language is English.
+<head> → Holds page information (not shown on screen).
+<meta charset="UTF-8"> → Makes all letters and symbols show correctly.
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> → Makes the page fit properly on phone and computer screens.
+<title>Document</title> → Sets the page name shown on the browser tab.
+<body> → Where all the visible page content goes.
+</body> & </html> → End of the page.
+
+Types of CSS Styling
+Inline CSS → Style is written inside an HTML tag using the style attribute.eg:<h1 style="color:red;">Hello</h1>
+Internal CSS → Style is written inside <style> tag (used in your code).
+External CSS → Style is written in a separate .css file and linked using <link> tag.
+
+<a> — Anchor tag — creates a clickable hyperlink.
+href — Hypertext Reference attribute — specifies the URL of the link in an <a> tag.
+<ul> — Unordered list tag — creates a bullet-point list.
+<ol> — Ordered list tag — creates a numbered list.
+<li> — List item tag — defines an item in a list.
+<table> — Table tag — creates a table.
+<tr> — Table row tag — defines a row in a table.
+<th> — Table header tag — defines a header cell in a table.
+<td> — Table data tag — defines a normal cell in a table.
+<div> — Division tag — groups elements together as a container.
+<img> — Image tag — displays an image on the page.
+<pre> — Preformatted text tag — preserves spaces and line breaks exactly.
+
+| Feature            | HTML                                   | HTML5                                                                                                    |
+| ------------------ | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| **Definition**     | Standard language to create web pages  | Latest version of HTML with new features                                                                 |
+| **Multimedia**     | Requires plugins for audio/video       | `<audio>` and `<video>` supported natively                                                               |
+| **Semantic Tags**  | Uses `<div>` and `<span>` mainly       | Introduces `<header>`, `<footer>`, `<nav>`, `<section>`, `<article>`                                     |
+| **Graphics**       | No native support                      | Supports `<canvas>` and `<svg>`                                                                          |
+| **Forms**          | Basic input types (`text`, `password`) | New input types (`email`, `date`, `number`, `color`, `range`) and attributes (`placeholder`, `required`) |
+| **APIs / Storage** | None                                   | Local storage, session storage, geolocation, offline apps, drag-and-drop                                 |
+| **Doctype**        | Long and complicated                   | Simplified: `<!DOCTYPE html>`                                                                            |
+
+
+EXP2: Write a program to create a placements registration form using HTML 5 Elements.
+<form> — Form tag; container for all form elements to collect user input.
+<fieldset> — Fieldset tag; groups related form elements together in a box.
+<legend> — Legend tag; gives a title to a <fieldset>.
+<input> — Input tag; collects user data (text, email, password, radio, checkbox, number, file).
+<textarea> — Text Area tag; allows multi-line text input.
+<select> — Select tag; creates a dropdown menu.
+<option> — Option tag; individual item in a dropdown (<select>).
+<br> — Break tag; inserts a line break.
+
+EXP3: Write a program to design home page of commercial website and apply different CSS selectors to the same.
+CSS Selectors - CSS selectors are patterns used to select HTML elements that you want to style.
+<header> — Represents the top section of a webpage, usually containing logo, site title, and navigation links.
+<footer> — Represents the bottom section of a webpage, usually containing copyright info, social media links, or contact info.
+:hover - hover applies styles when the user moves the mouse over an element. You use it with CSS properties (like color, background-color, transform) to create effects.
+
+EXP4: Write a program to enhance styling of your webpage using Bootstrap
+Definition: Bootstrap is a free, open source CSS framework that helps you create responsive and mobile friendly websites. 
+It provides prewritten CSS, and components like buttons, forms, navbars, grids, and modals so you don’t have to write everything from scratch.
+
+py- py stands for padding on the Y-axis
+bg- Sets background color (e.g., bg-primary, bg-success).
+text- Sets text color (e.g., text-light, text-warning).
+fw- Font weight (e.g., fw-bold, fw-light).
+fs- Font size (e.g., fs-1 largest, fs-6 smallest).
+btn- Base button styling.
+btn- Button color (e.g., btn-primary, btn-danger).
+h- Height of element (e.g., h-25, h-50, h-100).
+w- Width of element (e.g., w-25, w-50, w-100).
+m-* / mt-* / mb-* / mx-* / my-* → Margin spacing (e.g., m-3 = margin all sides, mt-2 = margin top).
+p-* / pt-* / pb-* / px-* / py-* → Padding spacing (e.g., p-3 = padding all sides).
+text-center → Center-align text horizontally.
+d-flex → Makes container a flexbox.
+justify-content-* → Align flex items horizontally (e.g., justify-content-center).
+align-items-* → Align flex items vertically (e.g., align-items-center).
+card → Card component container.
+card-body → Inner content area of a card.
+card-title → Heading inside a card.
+card-text → Paragraph or content inside a card.
+container / container-fluid → Page layout containers (container-fluid is full-width).
+rounded-* → Rounded corners (e.g., rounded, rounded-3).
+border / border-* → Adds border to element (e.g., border-primary, border-2).
+
+EXP5: Write a program to implement ES6 functions.
+Arrow Function:
+An arrow function is a shorter syntax for writing functions using the => operator.
+It does not have its own this, arguments, or super bindings.
+Anonymous Function:
+An anonymous function is a function that has no name or identifier.
+It is often used as a value, callback, or inside other functions.
+
+EXP6:Write a program to apply validations to Registration Form.
+
+EXP7:Promise and Iterator
+Promises in JavaScript were introduced to avoid callback hell. A Promise represents the future result of an asynchronous operation and has three states: pending, resolved (success via resolve), and rejected (failure via reject). Use .then() to handle success, .catch() for errors, and .finally() for code that runs either way, making async code cleaner and easier to manage.
+
+EXP8:Write a program to demonstrate class and function component.
+Function Component
+A function component in React is a simple JavaScript function that returns JSX, which defines what should be displayed on the screen. It can accept inputs called props and use React Hooks (like useState or useEffect) to handle state and side effects. Function components are lightweight, easy to read, and are now the most commonly used type of component in modern React development.
+Class Component 
+A class component in React is a JavaScript class that extends the React.Component class. It contains a render() method that returns JSX to describe the UI. Class components can store and manage internal data using this.state and respond to lifecycle events with methods like componentDidMount() or componentDidUpdate(). They were the traditional way to create components before the introduction of Hooks.
+
+EXP9:Write a program to demonstrate States & Props using React JS.
+In React, props (short for "properties") are the way you pass data from a parent component down to a child component.
+In React, state and props are both used to manage data but serve different purposes. State is internal to a component and can be changed over time using functions like setState() or useState(), making it useful for handling dynamic or interactive data. On the other hand, props are external inputs passed from a parent component to a child, and they are immutable, meaning they cannot be modified by the child component.
+
+EXP10:Write a program to implement React JS Refs.
+A Ref (short for Reference) in React is used to directly access or interact with DOM elements or React components created in the render method. It allows you to read or modify the value of an element without re-rendering the component. Refs are commonly used to handle focus, text selection, animations, or to integrate third-party libraries that need direct DOM manipulation. In functional components, Refs are created using React.createRef().
+
+EXP11:Write a program to create an application using Express App.
+Express.js is a web application framework that works on top of Node.js, which is a server-side environment that uses Google’s V8 JavaScript engine to run code outside the browser. Express helps developers build and manage server-side applications and APIs easily by handling routes, requests, and responses efficiently. It makes backend development faster and more organized.
+
+
