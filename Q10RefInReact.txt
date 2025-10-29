@@ -1,0 +1,40 @@
+EXP10: Write a program to implement React JS Refs.
+
+UseRef.js file
+import React,{Component} from "react";
+export default class UseRef extends Component{
+    constructor(){
+        super();
+        this.myref = React.createRef();
+    }
+    edit(){
+        this.myref.current.style.color='blue'
+        this.myref.current.style.fontSize='100px'
+        this.myref.current.style.backgroudColor='Yellow'
+    }
+    edit1(){
+        this.myref.current.style.display='none'
+    }
+    render(){
+        return(
+            <div>
+                <input type="text" name="User" ref={this.myref}/>
+                <button onClick={()=>this.edit()}>ClickMe</button>
+                <button onClick={()=>this.edit1()}>Hide</button>
+            </div>
+        )
+    }
+}
+
+App.js file
+import logo from './logo.svg';
+import './App.css';
+import UseRef from './component/UseRef.js';
+function App() {
+  return (
+      <UseRef/>
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,177 @@
+EXP1 :Write a program to create a student portfolio webpage using HTML 5 elements.
+
+MAIN PAGE :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APSIT</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: 'Times New Roman';
+            text-align: center; 
+        }
+        h1 {
+            color: darkblue;
+        }
+        a {
+            text-decoration: none;
+            color: darkred;
+            margin: 10px;
+        }
+        a:hover {
+            color: rgb(26, 60, 230);
+        }
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Profile</h1>
+    <img src="profile.jpeg" alt="Profile Picture"> <br><br>
+    
+    <a href="basic.html">BASIC |</a>
+    <a href="Academic.html">ACADEMICS |</a>
+    <a href="Others.html">OTHERS</a>
+</body>
+</html>
+
+
+BASIC PAGE:
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<style>
+    body {
+        background-color: rgb(240, 173, 151);
+    }
+    h1{
+        color:rgb(14, 6, 0);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+</head>
+<body>
+    <center>
+        <h1>APSIT</h1>
+    </center>
+    <h2 style="color: rgba(108, 32, 19, 0.909);">MOODLE ID:</h2>
+    <h2 style="color: rgba(108, 32, 19, 0.909);">SEMESTER:</h2>
+    <h2 style="color: rgba(108, 32, 19, 0.909);">INSTITUTE/ORGANIZATION NAME: A.P Shah Institute of Technology</h2>
+    <h2 style="color: rgba(108, 32, 19, 0.909);">AGE:</h2>
+    <h2 style="color: rgba(108, 32, 19, 0.909);">HOBBIES: Traveling,UI/UX and Graphics Designing</h2>
+</body>
+</html>
+
+ACADEMICS PAGE:
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+</head>
+<body>
+    <center>
+        <h1 style="color: rgb(8, 8, 119);";">ACADEMIC PERFORMANCE</h1>
+    <div>
+        <table border="3px">
+            <tr>
+                <th> SUBJECTS </th>
+                <th> MARKS </th>
+            <tr>
+                <td>OS</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td>M4</td>
+                <td>63</td>
+            </tr>
+            <tr>
+                <td>NETWORKING</td>
+                <td>79</td>
+            </tr>
+            <tr>
+                <td>COA</td>
+                <td>72</td>
+            </tr>
+            <tr>
+                <td>AT</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+<style>
+body{
+background-color:rgb(142, 185, 234);
+}
+</style>
+</body>
+</html>
+
+
+OTHER PAGE:
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+</head>
+<style>
+    h1{
+       color:rgb(166, 129, 96); background-color: antiquewhite;
+    }
+    body{
+        background-color:black;
+    }
+    h2{
+        color:darkkhaki;
+    }
+    ol{
+       color:bisque; 
+    }
+    ul{
+       color:bisque; 
+    }
+</style>
+<body>
+    <center>
+        <h1> Other Details </h1>
+    </center>
+    <h2>Soft Skills:</h2>
+    <ol>
+        <li>Team Work</li>
+        <li>Adaptivity</li>
+        <li>Problem Solving</li>
+        <li>Leadership</li>
+    </ol>
+    <h2>Cources:</h2>
+    <ul>
+        <li>IBM - Frontend Development</li>
+        <li>Cisco - Networking</li>
+        <li>Advance Excel</li>
+        <li>Basic Figma & Canva</li>
+    </ul>
+    <h2>Interests:</h2>
+    <ul>
+        <li>Ui/UX Designing</li>
+        <li>Grapics Designing</li>
+    </ul>
+    <h2>Internships:</h2>
+    <ul>
+        <li>Python Basics at Nestech Company</li>
+        <li>Real-time website development at Nexiquest Ventures LLP(Ongoing) </li>
+    </ul>
+</body>
+</html>
+
+

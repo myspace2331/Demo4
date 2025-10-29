@@ -1,0 +1,39 @@
+EXP7: Write a program to implement ES6 Iterator & Promises
+
+let pr =  new Promise((resolve, reject)=>{
+    let a = 0;
+    if(a > 0){
+        resolve("Number is Positive")
+    }
+    else if(a === 0){
+        resolve("Number is Zero")
+    }
+    else{
+        reject("Number is Negative")
+    }
+});
+
+pr.then(result => console.log(result))
+  .catch(error => console.log(error));
+
+or 
+
+function fibonacciIterator(limit = 100) {
+    let a = 0, b = 1;
+    return {
+        [Symbol.iterator]() {
+            return this;
+        },
+        next() {
+            let current = a;
+            if (current > limit) {
+                return { done: true };
+            }
+            [a, b] = [b, a + b];
+            return { value: current, done: false };
+        }
+    };
+}
+for (const num of fibonacciIterator(100)) {
+    console.log(num);
+}

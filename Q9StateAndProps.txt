@@ -1,0 +1,57 @@
+EXP9: Write a program to demonstrate Class Component with States and props using React JS
+
+To create new project in react
+npx create-react-app myapp
+
+
+State:
+StateDemo.js file 
+import { Component } from "react";
+export default class StateDemo extends Component {
+state = {count: 0,};
+increment = () => {this.setState({ count: this.state.count + 1 });};
+decrement = () => {this.setState({ count: this.state.count - 1 });};
+render() {
+    return (
+      <div>
+        <h2>Count: {this.state.count}</h2>
+        <button onClick={this.increment}>Increment</button>
+        <button onClick={this.decrement}>Decrement</button>
+      </div>
+    );
+  }
+}
+
+
+Props:
+PropsDemo.js file
+import React from "react";
+export default function PropsDemo(props){
+        return(
+            <div>
+                <h1>Account Details</h1>
+                <h2>
+                    Bank Name:{props.name}<br/>
+                    Account Type:{props.type}<br/>
+                    Balance:{props.bal}<br/>
+                </h2>
+            </div>
+        );
+    
+}
+
+App.js file
+import logo from './logo.svg';
+import './App.css';
+import PropsDemo from '../src/component/PropsDemo.js';
+import StateDemo from '../src/component/StateDemo.js';
+function App() {
+  return (
+    <div className="App">
+      <PropsDemo name='SBI' type='Saving Account' bal='Rs.200000'/>
+      <StateDemo/>
+    </div>
+  );
+}
+
+export default App;

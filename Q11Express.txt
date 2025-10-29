@@ -1,0 +1,71 @@
+EXP11: Write a program to create an application using Express App.
+
+mkdir Demo
+cd Demo
+npm install express
+npm init -y
+
+To run -> node  filename.js
+
+expr.js
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {
+console.log("Got a GET request for the homepage");
+res.send("Welcome to express js!!!");
+})
+app.post('/',function (req, res) {
+console.log("Got a POST request for the homepage");
+res.send("I am Impossible");
+})
+app.get("/del_student",function(req, res) {
+console.log("Got a DELETE request for /del_student");
+res.send("I am Deleted!");
+})
+app.get("/enrolled_student",function(req, res) {
+console.log("Got a GET request for /enrolled_student");
+res.send("I am an enrolled student");
+})
+app.get('/ab*cd', function(req, res) {
+res.send(' Pattern Match!');
+})
+var server = app.listen(5000, function () {
+var host = server.address().address
+var port = server.address().port
+console.log("Example app listening at http://localhost:5000", host, port)
+})
+
+
+or 
+
+
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {
+console.log("Got a GET request for the homepage");
+res.send('Welcome to Express JS!!!');
+});
+app.post('/homee', function (req, res) {
+console.log('Got a POST request for the /homee page');
+res.send('POST request to the homepage');
+});
+app.get('/listUsers', function (req, res) {
+console.log("Got a GET request for /listUsers");
+res.send('This is the user list page!');
+});
+app.get('/del_user', function (req, res) {
+console.log("Got a GET request for /del_user");
+res.send('Delete user page!');
+});
+app.get('/enrolled_student', function (req, res) {
+console.log("Got a GET request for /enrolled_student");
+res.send('I am Enrolled!');
+});
+app.get('/ab*cd', function (req, res) {
+console.log("Got a GET request for a pattern matching route");
+res.send('Pattern Match!');
+});
+var server = app.listen(5000, function () {
+var port = server.address().port;
+console.log("Example app listening at http://localhost:%s", port);
+});

@@ -1,0 +1,76 @@
+EXP6: Write a program to apply validations to Registration Form.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body { background-color: rgb(198, 198, 198); }
+    #f1 { background-color: cadetblue; padding: 20px; border-radius: 8px; width: 400px; }
+    legend { color: rgb(13, 70, 70); font-weight: bold; }
+</style>
+<script>
+function formValidation() {
+    const form = document.Registration;
+    let name = form.un.value.trim();
+    let email = form.mail.value.trim();
+    let pss = form.pass.value.trim();
+    let no = form.pno.value.trim();
+    let adr = form.adrs.value.trim();
+    let gndr = document.querySelector('input[name="gen"]:checked')
+    if (!name || !email || !pss || !no || !adr || !gndr) {
+        alert("All fields are required!");
+        return false;
+    }
+    if (!name.match(/^[a-zA-Z ]+$/)) {
+        alert("Name must contain only letters.");
+        form.un.focus();
+        return false;
+    }
+    if (!email.endsWith("@gmail.com")) {
+        alert("Email must end with @gmail.com");
+        form.mail.focus();
+        return false;
+    }
+    if (pss.length < 8) {
+        alert("Password must be at least 8 characters long.");
+        form.pass.focus();
+        return false;
+    }
+    if (!/^\d{10}$/.test(no)) {
+        alert("Phone number must be exactly 10 digits.");
+        form.pno.focus();
+        return false;
+    }
+    alert("Form submitted successfully!");
+    return true;
+}
+</script>
+</head>
+<body>
+<form name="Registration" onsubmit="return formValidation()">
+    <fieldset id="f1">
+        <legend>Registration Form</legend>
+        UserName:<br>
+        <input type="text" name="un"/><br><br>
+        Email:<br>
+        <input type="email" name="mail"/><br><br>
+        Password:<br>
+        <input type="password" name="pass"/><br><br>
+        PhoneNo:<br>
+        <input type="text" size="10" name="pno"/><br><br>
+        Address:<br>
+        <textarea rows="5" cols="50" name="adrs"></textarea><br><br>
+        Gender:<br>
+        <input type="radio" name="gen" value="Male"/> Male
+        <input type="radio" name="gen" value="Female"/> Female<br><br>
+    </fieldset><br>
+    <center>
+        <button type="submit">Submit</button>
+    </center>
+</form>
+</body>
+</html>

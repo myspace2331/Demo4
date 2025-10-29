@@ -1,0 +1,92 @@
+EXP2: Write a program to create a placements registration form using HTML 5 Elements.  
+
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<style>
+    body{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(200, 186, 206);
+    font-size: 20px;
+    }
+    #f1{
+    background-color: rgb(148, 140, 151);
+    }
+    #f2{
+    background-color: rgb(138, 114, 111);
+    }
+    #f3{
+    background-color: rgb(116, 113, 148);
+    }
+    legend{
+        color: rgb(91, 38, 25);
+    }
+</style>
+</head>
+<body>
+    <h1>Student Placement Registration Form</h1>
+    <form>
+        <fieldset id="f1">
+            <legend>Basic Details</legend>
+            Name:
+            <input type="text"><br><br>
+            Email:
+            <input type="email"><br><br>
+            Password:
+            <input type="password"><br><br>
+            Gender:
+            <input type="radio" name="gen">Female
+            <input type="radio" name="gen">Male <br><br>
+            Contact no:
+            <input type="text" size="2" value="+91">
+            <input type="number" size="10"><br><br>
+            Address:<br>
+            <textarea rows="5" cols="40"></textarea>
+        </fieldset></br>
+        <fieldset id = "f2" >
+            <legend>Academic Information</legend>
+            Branch:
+            <select>
+                <option>IT</option>
+                <option>COMS</option>
+                <option>AIML</option>
+                <option>DS</option>
+            </select></br></br>
+            Percentage:
+            <input type="text" size="2"><br><br>
+            Overall CGPA:
+            <input type="text" size="2"><br><br>
+            Programming Language Experties:</br>
+            <input type="checkbox" name="lang">CSS
+            <input type="checkbox" name="lang">HTML
+            <input type="checkbox" name="lang">Java
+            <input type="checkbox" name="lang">Python
+            <input type="checkbox" name="lang">C++<br><br>
+            Internship:
+            <select>
+                <option>COHORT</option>
+                <option>Red Hat</option>
+                <option>CISCO</option>
+                <option>Other</option>
+                <option>None</option>
+            </select><br><br>
+            Project Names:
+            <input type="text"><br><br>
+        </fieldset><br>
+        <fieldset id = "f3" >
+            <legend>File Uploads</legend>
+            Certificates:
+            <input type="file"><br><br>
+            Resume:
+            <input type="file"><br><br>
+        </fieldset><br>
+        <center>
+            <button>Submit</button>
+        </center>
+    </form>
+</body>
+</html>

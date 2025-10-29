@@ -1,0 +1,82 @@
+EXP8: Write a program to demonstrate Class Component & Functional Component using React JS.
+
+Class Component:
+Myclass.js file
+import React, { Component } from "react";
+import logo from '../logo.svg';
+
+class Myclass extends Component {
+    show() {
+        const list = document.getElementById("myList");
+        if (list.style.display === "none") {
+            list.style.display = "block";
+        } else {
+            list.style.display = "none";
+        }
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Demo for Class</h1>
+                <img src={logo} width='100px' height='100px' alt="logo"/>
+                <ul id="myList">
+                    <li>About</li>
+                    <li>Cources</li>
+                    <li>Books</li>
+                    <li>Contact us</li>
+                </ul>
+                <button type="button" onClick={this.show}>ShowHide List</button>
+            </div>
+        )
+    }
+}
+
+export default Myclass;
+
+Function Component:
+Myfun.js file
+import React from "react";
+ function Myfun(){
+    return(
+        <div>
+            <h1>
+                Demo for Function component
+            </h1>
+            <center>
+            <table  border='5px' cellPadding='30px'>
+                <tr bgcolor="blue">
+                    <th>Activity</th>
+                    <th>Status</th>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td>Cohort1</td>
+                    <td>Completed</td>
+                </tr>
+                <tr bgcolor="yellow">
+                    <td>Cohort2</td>
+                    <td>Pending</td>
+                </tr>
+            </table>
+            </center>
+        </div>
+    )
+ }
+export default Myfun;
+
+
+App.js file
+import logo from './logo.svg';
+import './App.css';
+import Myclass from '../src/component/Myclass.js';
+import Myfun from '../src/component/Myfun.js';
+function App() {
+  return (
+    <div className="App">
+      <Myclass/>
+      <Myfun/>
+    </div>
+  );
+}
+export default App;
+
